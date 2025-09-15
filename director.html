@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-main">
+    <div class="card">
+      <h2>ค้นหา/กรอง</h2>
+      <form>
+        <label>ประเภท</label>
+        <select>
+          <option>-- เลือก --</option>
+          <option>ประเภท A</option>
+          <option>ประเภท B</option>
+        </select>
+
+        <label>วันที่</label>
+        <input type="date">
+
+        <select>
+          <option>-- เลือก --</option>
+          <option>ประเภท A</option>
+          <option>ประเภท B</option>
+        </select>
+
+        <label>คำค้นหา</label>
+        <input type="text" placeholder="กรอกคำค้น">
+
+        <button type="submit">บันทึก</button>
+        <a href="index.html" class="btn">Back</a>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>ตารางรายการ</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ไฟล์เล่มแก้ไข</th>
+            <th>สถานะลงนาม</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-</td>
+            <td>รออัปโหลด</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

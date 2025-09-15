@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container-main">
+    <div class="card">
+      <h2>ค้นหา/กรอง</h2>
+      <form>
+        <label>วันที่</label>
+        <input type="date">
+
+        <label>ชื่อโครงงาน</label>
+        <input type="text" placeholder="ชื่อโครงงาน">
+
+        <label>ความคิดเห็น</label>
+        <input type="text" placeholder="ความคิดเห็น">
+
+        <button type="submit">บันทึกความเห็น</button>
+        <a href="้home.html" class="btn">Back</a>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>ตารางรายการ</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>สัปดาห์</th>
+            <th>นศ.ประเมิน</th>
+            <th>อาจารย์ให้</th>
+            <th>ความติดเห็น</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>20%</td>
+            <td>25%</td>
+            <td>
+                <a href="detail.html" class="btn">ความติดเห็น</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>30%</td>
+            <td>35%</td>
+            <td>
+              <a href="detail.html" class="btn">ความคิดเห็น</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
