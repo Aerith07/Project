@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เพิ่มโครงงาน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ปุ่ม Back -->
+  <header style="width:100%; display:flex; justify-content:flex-start; margin-bottom:20px;">
+    <button class="btn" onclick="window.location.href='index.html'">⬅ กลับหน้าแรก</button>
+  </header>
+
+  <main class="container-main">
+    <div class="card">
+      <h2>เพิ่มโครงงาน</h2>
+      <form onsubmit="return saveProject()">
+        <label for="projectName">ชื่อโครงงาน</label>
+        <input type="text" id="projectName" placeholder="กรอกชื่อโครงงาน" required>
+
+        <label for="owner">ผู้รับผิดชอบ</label>
+        <input type="text" id="owner" placeholder="ชื่อผู้ทำโครงงาน">
+
+        <label for="status">สถานะ</label>
+        <select id="status">
+          <option>กำลังทำ</option>
+          <option>เสร็จสิ้น</option>
+          <option>รออนุมัติ</option>
+        </select>
+
+        <label for="desc">รายละเอียด</label>
+        <textarea id="desc" rows="4" placeholder="อธิบายโครงงานสั้น ๆ"></textarea>
+
+        <div style="display:flex; gap:10px; margin-top:10px;">
+          <button type="submit" class="btn">💾 บันทึก</button>
+          <button type="button" class="btn" onclick="window.location.href='index.html'">⬅ กลับหน้าแรก</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    function saveProject() {
+      alert("บันทึกโครงงานเรียบร้อย ✅");
+      window.location.href = "list.html"; // บันทึกเสร็จ → ไปหน้ารายการ
+      return false;
+    }
+  </script>
+
+</body>
+</html>
