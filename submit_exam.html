@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+     <nav class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h1>
+      </div>
+        <a href="home-student.html" class="active">หน้าแรก</a>
+        <a href="dashboard-student.html">Dashboard</a>
+        <a href="progress.html">ความก้าวหน้า</a>
+        <a href="submit_exam.html">ยื่นสอบ</a>
+        <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+<section class="container-reg1">
+  <div class="card">
+    <h2>ลงทะเบียนประจำปีการศึกษา 2568 ภาคเรียนที่ 1</h2>
+    <form action="#" method="post" class="grid">
+      <div class="grid col-2">
+        <label for="stu-id">รหัสนักศึกษาผู้จัดทำ</label>
+      <input type="text" name="stu-id" id="stu-id" placeholder="กรอกรหัสนักศึกษา" required>
+
+      <label for="title_th">ชื่อโครงงาน (ไทย)</label>
+      <input type="text" name="title_th" id="title_th" placeholder="กรอกชื่อโครงงาน (ไทย)" required>
+
+      <div class="grid col-3">
+        <button type="submit" class="btn">ลงทะเบียน</button>
+        <button type="reset" class="btn btn-secondary">ล้าง</button>
+      </div>
+    </form>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <h1>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h1>
+    </div>
+      <a href="home-teacher.html">หน้าหลัก</a>
+      <a href="professor.html">อาจารย์ที่ปรึกษา</a>
+      <a href="professor-co.html">อาจารย์ที่ปรึกษา (ร่วม)</a>
+      <a href="advisor.html">อาจารย์ประจำวิชา</a>
+  </nav>
+  </header> 
+  <div class="container-main">
+    <div class="card">
+      <h2>ค้นหา/กรอง</h2>
+      <form>
+        <label>วันที่</label>
+        <input type="date">
+
+        <label>ชื่อโครงงาน</label>
+        <input type="text" placeholder="ชื่อโครงงาน">
+
+        <label>ความคิดเห็น</label>
+        <input type="text" placeholder="ความคิดเห็น">
+
+      <div class="grid col-2">
+        <button type="submit" class="btn">บันทึกความคิดเห็น</button>
+        <a class="btn" href="home-teacher.html">หน้าแรก</a>
+      </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>ตารางรายการ</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>สัปดาห์</th>
+            <th>นศ.ประเมิน</th>
+            <th>อาจารย์ให้</th>
+            <th>ความติดเห็น</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="detail.html" class="btn">ความติดเห็น</a>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <a href="detail.html" class="btn">ความคิดเห็น</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

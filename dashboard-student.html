@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h1>
+      </div>
+        <a href="home-student.html" class="active">หน้าแรก</a>
+        <a href="proposal-form.html">กรอกแบบเสนอหัวข้อ</a>
+        <a href="progress.html">ความก้าวหน้า</a>
+        <a href="submit_exam.html">ยื่นสอบ</a>
+        <a href="upload.html">Upload</a>
+    </nav>
+  </header>
+<section class="container-main">
+  <div class="card">
+    <h2>ข้อมูลโครงงาน</h2>
+    <form action="#" method="post" class="grid">
+      <div class="grid col-2">
+        <div>
+          <label for="program">ภาควิชา/สาขา</label>
+          <select name="program" id="program" required>
+            <option value="">-- เลือก --</option>
+            <option>IT</option>
+            <option>ITI</option>
+            <option>INE</option>
+            <option>INET</option>
+            <option>ITT</option>
+          </select>
+        </div>
+        <div>
+          <label for="year">ปีการศึกษา</label>
+          <input type="text" name="year" id="year" placeholder="2568/2025" required>
+        </div>
+      </div>
+
+      <label for="title_th">ชื่อโครงงาน (ไทย)</label>
+      <input type="text" name="title_th" id="title_th" placeholder="กรอกชื่อโครงงาน (ไทย)" required>
+
+      <label for="title_en">ชื่อโครงงาน (อังกฤษ)</label>
+      <input type="text" name="title_en" id="title_en" placeholder="Project Title (English)" required>
+        
+      <legend class="word-dashstu">รายชื่อนักศึกษา</legend>
+        <div class="grid col-2">
+          <div>
+            <label for="stu1">นักศึกษา คนที่ 1</label>
+            <input type="text" name="stu1" id="stu1" placeholder="รหัสนักศึกษา - ชื่อ นามสกุล" required>
+          </div>
+          <div>
+            <label for="stu2">นักศึกษา คนที่ 2 (ถ้ามี)</label>
+            <input type="text" name="stu2" id="stu2" placeholder="รหัสนักศึกษา - ชื่อ นามสกุล" required>
+          </div>
+          <div>
+            <label for="stu3">นักศึกษา คนที่ 3 (ถ้ามี)</label>
+            <input type="text" name="stu3" id="stu3" placeholder="รหัสนักศึกษา - ชื่อ นามสกุล" required>
+          </div>
+          <div>
+            <label for="stu4">นักศึกษา คนที่ 4 (ถ้ามี)</label>
+            <input type="text" name="stu4" id="stu4" placeholder="รหัสนักศึกษา - ชื่อ นามสกุล">
+            <p class="help">รองรับสูงสุด 4 คนเท่านั้น</p>
+          </div>
+        </div>
+
+      <label for="advisor">อาจารย์ที่ปรึกษา คนที่ 1</label>
+      <input type="text" name="advisor" id="advisor" placeholder="เช่น ผศ.ดร....." required>
+      <label for="advisor">อาจารย์ที่ปรึกษา คนที่ 2 (ถ้ามี)</label>
+      <input type="text" name="advisor" id="advisor" placeholder="เช่น ผศ.ดร....." required>
+
+      <div class="grid col-2">
+        <button type="submit" class="btn">บันทึกข้อมูล</button>
+        <a class="btn" href="student-progress.html">อัปเดตรายสัปดาห์</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>สถานะรวม</h2>
+    <p><span class="status">สถานะ: รอเสนอหัวข้อ</span></p>
+    <table class="table">
+      <thead>
+        <tr><th>ขั้นตอน</th><th>สถานะ</th><th>ลิงก์</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>เสนอหัวข้อ</td><td>ยังไม่ส่ง</td><td><a href="student-proposal.html">กรอกแบบ</a></td></tr>
+        <tr><td>สอบหัวข้อ</td><td>ยังไม่กำหนด</td><td><a href="student-proposal.html#defense">ดู</a></td></tr>
+        <tr><td>ความก้าวหน้า</td><td>0%</td><td><a href="student-progress.html">อัปเดต</a></td></tr>
+        <tr><td>ยื่นสอบ 100%</td><td>ยังไม่ได้ยื่น</td><td><a href="student-defense-request.html">ยื่นสอบ</a></td></tr>
+        <tr><td>ส่งไฟล์เล่ม/สไลด์</td><td>ยังไม่ส่ง</td><td><a href="student-final-submission.html">อัปโหลด</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>
